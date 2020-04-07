@@ -121,7 +121,7 @@ def generate_classifier_dataset():
       "qnli": classifier_data_lib.QnliProcessor,
       "sst-2": classifier_data_lib.SstProcessor,
       "xnli": classifier_data_lib.XnliProcessor,
-      "weibo": classifier_data_lib.BdbkProcessor,
+      "weibo": classifier_data_lib.WeiboProcessor,
   }
   task_name = FLAGS.classification_task_name.lower()
   if task_name not in processors:
