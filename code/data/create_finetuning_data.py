@@ -45,7 +45,7 @@ flags.DEFINE_string(
     "for the task.")
 
 flags.DEFINE_enum("classification_task_name", "MNLI",
-                  ["COLA", "MNLI", "MRPC", "QNLI", "SST-2", "XNLI", "BDBK"],
+                  ["COLA", "MNLI", "MRPC", "QNLI", "SST-2", "XNLI", "WEIBO"],
                   "The name of the task to train BERT classifier.")
 
 # BERT Squad task specific flags.
