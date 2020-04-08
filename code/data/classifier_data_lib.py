@@ -423,9 +423,9 @@ class WeiboProcessor(DataProcessor):
             guid = "%s-%s" % (set_type, i)
             if i == 0:
                 continue
-            label = self.process_text_fn(line[2])
+            # label = self.process_text_fn(line[2])
             text_a = self.process_text_fn(line[1])
-            label = self.process_text_fn(line[2]) if len(line) >= 3 else None
+            label = self.process_text_fn(line[2]) if len(line) >= 3 else '0'
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 

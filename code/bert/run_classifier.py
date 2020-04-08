@@ -30,7 +30,7 @@ import custom_metrics
 import pickle
 import tensorflow as tf
 
-from official.modeling import model_training_utils
+from official.nlp.bert import model_training_utils
 from official.nlp import optimization
 from official.nlp.bert import bert_models
 from official.nlp.bert import common_flags
